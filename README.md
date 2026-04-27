@@ -7,7 +7,7 @@ the circuit is splitted between one motherboard and three cardinalboard
 this repo has the motherboard
 <img width="1600" height="1217" alt="image" src="https://github.com/user-attachments/assets/c4e661e0-f9ae-48d2-bfc9-3e2ef1e253e7" />
 
-the cardinal board can be found there : https://github.com/nathmo/Sthymuli-cardinalboard
+the cardinal board can be found [here](https://github.com/Sthymuli/cardinalboard)
 <img width="1324" height="656" alt="image" src="https://github.com/user-attachments/assets/6bce58a5-3221-47e1-8b61-8c7d59fe262c" />
 
 # Feature
