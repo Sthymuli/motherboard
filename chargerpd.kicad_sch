@@ -160,207 +160,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3029,12 +2828,6 @@
 		(uuid "07916cd5-70dd-4ef7-998b-bdfa24b462ac")
 	)
 	(junction
-		(at 255.27 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08b461ff-c611-41cf-a998-475bd93d7eaa")
-	)
-	(junction
 		(at 232.41 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3123,18 +2916,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ebdc52c-299c-472b-9121-253ce398a33f")
-	)
-	(junction
-		(at 264.16 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6fc40095-f474-47c6-b260-bc160b7a42d2")
-	)
-	(junction
-		(at 260.35 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a1f8885-260f-42b2-afaf-ec44c8f14175")
 	)
 	(junction
 		(at 152.4 62.23)
@@ -3262,16 +3043,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 76.2) (xy 264.16 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c5c59fb-b596-49ad-9eee-f4c0394326fc")
-	)
-	(wire
-		(pts
 			(xy 161.29 97.79) (xy 161.29 78.74)
 		)
 		(stroke
@@ -3279,16 +3050,6 @@
 			(type default)
 		)
 		(uuid "20a3da5a-e687-499f-963c-c227e8b8f351")
-	)
-	(wire
-		(pts
-			(xy 255.27 93.98) (xy 255.27 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20d7f444-53b6-41e7-a2ea-806619bc9f93")
 	)
 	(wire
 		(pts
@@ -3319,16 +3080,6 @@
 			(type default)
 		)
 		(uuid "29941e16-3a5f-4fd6-a739-5280bf5217e1")
-	)
-	(wire
-		(pts
-			(xy 264.16 95.25) (xy 267.97 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c9a1702-78ee-4f51-b231-fc1ee7e6b5ea")
 	)
 	(wire
 		(pts
@@ -3442,7 +3193,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 95.25) (xy 264.16 95.25)
+			(xy 247.65 95.25) (xy 267.97 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3509,16 +3260,6 @@
 			(type default)
 		)
 		(uuid "500c3d28-342f-41f0-bf29-98508902eff7")
-	)
-	(wire
-		(pts
-			(xy 264.16 93.98) (xy 264.16 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c49de90-9b40-410d-9916-f9991e14cfda")
 	)
 	(wire
 		(pts
@@ -3612,16 +3353,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 74.93) (xy 260.35 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7caf6047-d47c-467b-9f8f-3155ff9adc8b")
-	)
-	(wire
-		(pts
 			(xy 144.78 90.17) (xy 144.78 92.71)
 		)
 		(stroke
@@ -3629,16 +3360,6 @@
 			(type default)
 		)
 		(uuid "7e86bd2a-8dfa-45aa-9d8d-6c00daffcca7")
-	)
-	(wire
-		(pts
-			(xy 260.35 76.2) (xy 264.16 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8268afa6-8f7e-49c6-b9a5-b69d51ee2c69")
 	)
 	(wire
 		(pts
@@ -3712,16 +3433,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 97.79) (xy 255.27 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91e59eb5-d7fa-427a-96cb-ddb6fb419f35")
-	)
-	(wire
-		(pts
 			(xy 144.78 62.23) (xy 152.4 62.23)
 		)
 		(stroke
@@ -3772,16 +3483,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 76.2) (xy 260.35 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2e122b6-2977-4a2d-8a34-b668ca336444")
-	)
-	(wire
-		(pts
 			(xy 157.48 90.17) (xy 163.83 90.17)
 		)
 		(stroke
@@ -3792,23 +3493,13 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 97.79) (xy 267.97 97.79)
+			(xy 240.03 97.79) (xy 267.97 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a637d233-3833-467b-8c83-d33349c7e30f")
-	)
-	(wire
-		(pts
-			(xy 255.27 77.47) (xy 255.27 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a939bb48-386f-4bf0-9c6c-42132a12230e")
 	)
 	(wire
 		(pts
@@ -3909,16 +3600,6 @@
 			(type default)
 		)
 		(uuid "bf62f1c3-5539-471a-9aa9-ab78f4d97a4e")
-	)
-	(wire
-		(pts
-			(xy 255.27 85.09) (xy 255.27 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfe172f8-14d2-4e0c-8bbb-2b46e526acc7")
 	)
 	(wire
 		(pts
@@ -4039,16 +3720,6 @@
 			(type default)
 		)
 		(uuid "e7971347-702e-465f-b656-d8587750bb0e")
-	)
-	(wire
-		(pts
-			(xy 264.16 85.09) (xy 264.16 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8f6ea0f-333e-4871-a5ef-a5c603275f42")
 	)
 	(wire
 		(pts
@@ -4987,99 +4658,6 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 264.16 90.17 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38ef327f-c2f4-4cc8-b861-ccd1a023f0a2")
-		(property "Reference" "D2"
-			(at 267.97 90.4874 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 267.97 93.0274 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 264.16 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 264.16 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ca77540a-abba-41c3-b5c7-20e3db01a540")
-		)
-		(pin "1"
-			(uuid "9265e630-da2f-4bcd-9f6b-2ba0e3180146")
-		)
-		(instances
-			(project "Sthymuli-motherboard"
-				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -6276,82 +5854,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 260.35 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6c000bbc-8dd0-4616-bfe1-3c338c87be39")
-		(property "Reference" "#PWR0292"
-			(at 260.35 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 260.35 71.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 260.35 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 260.35 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 260.35 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "38de636f-e1ac-40e4-a45f-a42e9b401612")
-		)
-		(instances
-			(project "Sthymuli-motherboard"
-				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
-					(reference "#PWR0292")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "sthymuli_jlc:FXL0630-100-M")
 		(at 193.04 62.23 0)
 		(unit 1)
@@ -6458,129 +5960,6 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
 					(reference "L7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 264.16 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "761537f7-6e01-4ad8-89c3-2e35d954b194")
-		(property "Reference" "R81"
-			(at 267.06 80.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470R"
-			(at 267.61 82.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JSON_Ref" "R8"
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "Open-drain pull-up; CHG_CHRG to ESP32 GPIO"
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power_Section" "charger"
-			(at 264.16 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13fd2201-cf88-4446-85bb-77a54cca804e")
-		)
-		(pin "2"
-			(uuid "6da80fe6-1cf5-441f-8260-9851447c8adb")
-		)
-		(instances
-			(project "Sthymuli-motherboard"
-				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
-					(reference "R81")
 					(unit 1)
 				)
 			)
@@ -7810,129 +7189,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 255.27 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ea51134a-3c4b-497e-b1d3-7f8c4e2f8ee2")
-		(property "Reference" "R80"
-			(at 258.17 80.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470R"
-			(at 258.72 82.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JSON_Ref" "R8"
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "Open-drain pull-up; CHG_CHRG to ESP32 GPIO"
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power_Section" "charger"
-			(at 255.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4421969f-3320-4dec-939b-0d5d2cd7e444")
-		)
-		(pin "2"
-			(uuid "903bcbb5-d5ed-4bd0-b87d-f9f76ff0f3a9")
-		)
-		(instances
-			(project "Sthymuli-motherboard"
-				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
-					(reference "R80")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 109.22 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -8126,99 +7382,6 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
 					(reference "#PWR0286")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 255.27 90.17 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f39ab2c2-1f47-4112-886d-fcbfc46e0a65")
-		(property "Reference" "D1"
-			(at 259.08 90.4874 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 259.08 93.0274 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 255.27 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 255.27 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f1714e23-2170-420a-94e2-4600b244ddc9")
-		)
-		(pin "1"
-			(uuid "3802d4bf-0be2-4266-b489-f28050f22bb3")
-		)
-		(instances
-			(project "Sthymuli-motherboard"
-				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf"
-					(reference "D1")
 					(unit 1)
 				)
 			)
