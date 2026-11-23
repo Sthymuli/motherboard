@@ -1780,7 +1780,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47uH Isat>=4A DCR<=25mR (part to pick)"
+		(property "Value" "0.47uH Isat>=4A DCR<=25mR"
 			(at 144.78 109.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1790,7 +1790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sthymuli_jlc:IND-SMD_L4.4-W4.2_PSPMAA0412"
 			(at 144.78 106.68 90)
 			(hide yes)
 			(show_name no)
