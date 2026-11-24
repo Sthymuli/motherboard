@@ -37,4 +37,9 @@
 	(fp_circle (center 8.30 11.21) (end 8.33 11.21) (layer F.SilkS) (width 0.06))
 	(fp_circle (center -6.35 5.83) (end -5.60 5.83) (layer Cmts.User) (width 1.50))
 	(fp_circle (center 6.35 5.83) (end 7.10 5.83) (layer Cmts.User) (width 1.50))
+	(model "${KIPRJMOD}/lib/sthymuli_jlc.3dshapes/RJ45_Amphenol_RJHSE538X.step"
+		(offset (xyz 3.57 -3.31 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 180))
+	)
 )

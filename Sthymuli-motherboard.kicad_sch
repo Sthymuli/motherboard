@@ -7682,7 +7682,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sthymuli_jlc:USB-TYPE-C-16P"
+		(symbol "sthymuli_jlc:HC-TYPE-C-16P-FL6.65Q-5A-06"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -7698,7 +7698,7 @@
 					)
 				)
 			)
-			(property "Value" "Connector, USB-TYPE-C-16P"
+			(property "Value" "HC-TYPE-C-16P-FL6.65Q-5A-06"
 				(at 2.54 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7709,7 +7709,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PCM_JLCPCB:TYPE-C-SMD_HX-TYPE-C-16PIN"
+			(property "Footprint" "sthymuli_jlc:CONN-TH_HC-TYPE-C-16P-FL6.65Q-5A-06"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7721,7 +7721,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/0EF8F885FCCEA71F60E9E85152155021.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C5342434.pdf"
 				(at -2.286 0.127 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7733,7 +7733,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "3A 1 Horizontal attachment 16P Female -25℃~+85℃ Type-C SMD USB Connectors ROHS"
+			(property "Description" "5A 16P vertical through-hole Type-C receptacle, HCTL HC-TYPE-C-16P-FL6.65Q-5A-06"
 				(at 2.54 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7744,7 +7744,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C2927039"
+			(property "LCSC" "C5342434"
 				(at 2.54 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7755,7 +7755,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "C2927039"
+			(property "ki_keywords" "C5342434"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7766,7 +7766,7 @@
 					)
 				)
 			)
-			(symbol "USB-TYPE-C-16P_0_0"
+			(symbol "HC-TYPE-C-16P-FL6.65Q-5A-06_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -7878,7 +7878,7 @@
 					)
 				)
 			)
-			(symbol "USB-TYPE-C-16P_0_1"
+			(symbol "HC-TYPE-C-16P-FL6.65Q-5A-06_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -8079,7 +8079,7 @@
 					)
 				)
 			)
-			(symbol "USB-TYPE-C-16P_1_1"
+			(symbol "HC-TYPE-C-16P-FL6.65Q-5A-06_1_1"
 				(pin bidirectional line
 					(at 15.24 10.16 180)
 					(length 5.08)
@@ -19680,7 +19680,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sthymuli_jlc:USB-TYPE-C-16P")
+		(lib_id "sthymuli_jlc:HC-TYPE-C-16P-FL6.65Q-5A-06")
 		(at 26.67 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -19701,7 +19701,7 @@
 				)
 			)
 		)
-		(property "Value" "Connector, USB-TYPE-C-16P"
+		(property "Value" "HC-TYPE-C-16P-FL6.65Q-5A-06"
 			(at 29.21 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -19712,7 +19712,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sthymuli_jlc:TYPE-C-SMD_HX-TYPE-C-16PIN"
+		(property "Footprint" "sthymuli_jlc:CONN-TH_HC-TYPE-C-16P-FL6.65Q-5A-06"
 			(at 26.67 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -19724,7 +19724,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220920/0EF8F885FCCEA71F60E9E85152155021.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5342434.pdf"
 			(at 24.384 69.723 0)
 			(hide yes)
 			(show_name no)
@@ -19736,7 +19736,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "3A 1 Horizontal attachment 16P Female -25℃~+85℃ Type-C SMD USB Connectors ROHS"
+		(property "Description" "5A 16P vertical through-hole Type-C receptacle, HCTL HC-TYPE-C-16P-FL6.65Q-5A-06"
 			(at 29.21 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -19747,7 +19747,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2927039"
+		(property "LCSC" "C5342434"
 			(at 29.21 68.58 0)
 			(hide yes)
 			(show_name no)
