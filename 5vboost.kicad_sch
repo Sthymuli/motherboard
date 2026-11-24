@@ -1524,7 +1524,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VALUE CHOICES - TPS61088 (10 A switch boost)\n- VOUT = VREF x (1 + R11/R12) = 1.204 V x (1 + 178k/56k) = 5.04 V\n- fSW ~ 500 kHz with R10 = 316k (FSW to SW): VERIFY against datasheet eq. 2.\n- I_LIM = 1 190 000 / R14 = 1.19e6 / 120k = 9.9 A peak (PFM), >= 8.6 A worst case.\n- Soft start t_SS = VREF x C14 / 5 uA = 1.204 V x 47 nF / 5 uA = 11 ms.\n- R13 6.8k + C13 6.8 nF: compensation starting point - VERIFY.\n- C11 100 nF BOOT-SW bootstrap;  C15 2.2 uF on the internal VCC LDO.\n- EN has an internal 800k pull-down: 5 V stays off until ESP_5V_EN goes high.  R15 1k series.\n- MODE left open = PFM at light load.  NC pins 11/12 tied to GND.\n- L2 2.2 uH, Isat 18 A, 7 mR.  Input C107-C109, output C110-C113 (4 x 22 uF).\n- Layout: keep the input loop C107-C109 / L2 / PGND tight (~7 A peak);\n    C110-C113 next to the VOUT pins; exposed pad = thermal path."
+	(text "VALUE CHOICES - TPS61088 (U501, 10 A switch boost) + SY6280 load switch (U502)\n- VOUT = VREF x (1 + R501/R502) = 1.204 V x (1 + 178k/56k) = 5.03 V, sensed before U502 (~4.87 V on +5V at 2 A).\n- fSW ~ 510 kHz with R503 = 316k (FSW to SW).\n- Boost I_LIM = 1 190 000 / R505 = 1.19e6 / 120k = 9.9 A peak (PFM), >= 8.6 A worst case.\n- Soft start t_SS = 1.204 V x C507 / 5 uA = 1.204 V x 47 nF / 5 uA = 11 ms.\n- R504 6.8k + C510 6.8 nF: compensation, crossover ~4-8 kHz - confirm with a load-step test.\n- C509 100 nF BOOT-SW bootstrap;  C511 4.7 uF on the internal VCC LDO (> 1 uF effective required).\n- EN = RAIL_EN through R506 1k (internal 800k pull-down). U502 EN is on the same net.\n- U502 SY6280: +5V current limit = 6800 / R507 = 6800 / 3.3k = 2.06 A (+-25%; datasheet max 2 A).\n    The boost alone cannot disconnect its output (body diode): U502 gives a true OFF and short protection. C512 22 uF on its output.\n- MODE left open = PFM at light load.  NC pins 11/12 tied to GND.\n- L501 2.2 uH, Isat 18 A, 7 mR.  Input C501-C503, boost output C504-C508 (4 x 22 uF).\n- Layout: keep the input loop C501/C502 / L501 / PGND tight (~7 A peak); C504-C508 next to the VOUT pins;\n    exposed pad = thermal path; give U502 pins 2/5 copper (0.3 W at 2 A)."
 		(exclude_from_sim no)
 		(at 21.336 166.37 0)
 		(effects
@@ -1547,7 +1547,7 @@
 		(uuid "c5e64945-3c8b-4fd3-ad3c-c518818ae1ba")
 	)
 	(junction
-		(at 129.54 142.24)
+		(at 129.54 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09583e9c-c7e2-4f1c-af07-332ac6522018")
@@ -1675,6 +1675,16 @@
 	(no_connect
 		(at 143.51 119.38)
 		(uuid "a563f012-cb3f-4901-ac73-b39dc10e5b93")
+	)
+	(wire
+		(pts
+			(xy 129.54 146.05) (xy 129.54 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ebfc42-e292-4999-93b9-b39e3586b63d")
 	)
 	(wire
 		(pts
@@ -2028,7 +2038,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 142.24) (xy 153.67 142.24)
+			(xy 129.54 135.89) (xy 153.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2058,7 +2068,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 119.38) (xy 153.67 142.24)
+			(xy 153.67 119.38) (xy 153.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2188,6 +2198,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 134.62) (xy 129.54 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b70cc5-c52d-4b2c-b432-a02576b34f9e")
+	)
+	(wire
+		(pts
 			(xy 80.01 127) (xy 90.17 127)
 		)
 		(stroke
@@ -2195,16 +2215,6 @@
 			(type default)
 		)
 		(uuid "d316b32c-2ef9-4c65-9a89-e5b125d0a126")
-	)
-	(wire
-		(pts
-			(xy 129.54 134.62) (xy 129.54 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4a9a0ac-15a0-4e8f-a524-570d7815c550")
 	)
 	(wire
 		(pts
@@ -2377,7 +2387,7 @@
 		(uuid "7d32f0cc-7ed3-464e-832c-4541f7fc0227")
 	)
 	(label "BST_FB"
-		(at 134.62 142.24 0)
+		(at 134.62 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3231,7 +3241,7 @@
 		(dnp no)
 		(uuid "3703127a-a760-407d-99b3-9038dc5de6e1")
 		(property "Reference" "C501"
-			(at 52.26 37.1 90)
+			(at 51.054 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3241,7 +3251,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 54.46 39.5 90)
+			(at 47.752 40.894 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3574,7 +3584,7 @@
 		(dnp no)
 		(uuid "5db3c7d3-e616-475f-b8f6-c63e12d9deaa")
 		(property "Reference" "C504"
-			(at 94.17 131.08 90)
+			(at 92.964 129.286 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3584,7 +3594,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 96.37 133.48 90)
+			(at 89.662 134.112 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4639,7 +4649,7 @@
 		(dnp no)
 		(uuid "8edd2fe6-423a-4d71-bfd8-93fecc8d1ce9")
 		(property "Reference" "C502"
-			(at 62.42 37.1 90)
+			(at 61.214 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4649,7 +4659,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 64.62 39.5 90)
+			(at 57.658 40.894 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5088,7 +5098,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 149.86 0)
+		(at 129.54 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5098,7 +5108,7 @@
 		(dnp no)
 		(uuid "a8425774-e39f-47e7-ad3d-0a94f7d05d34")
 		(property "Reference" "#PWR0510"
-			(at 129.54 149.86 0)
+			(at 129.54 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5109,7 +5119,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 152.36 0)
+			(at 129.54 148.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5120,7 +5130,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 149.86 0)
+			(at 129.54 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5131,7 +5141,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 149.86 0)
+			(at 129.54 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5142,7 +5152,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 149.86 0)
+			(at 129.54 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5252,7 +5262,7 @@
 		(dnp no)
 		(uuid "d013255f-ffe5-4f27-b2e9-2cf4f2ca3607")
 		(property "Reference" "C506"
-			(at 114.49 131.08 90)
+			(at 113.284 129.794 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5262,7 +5272,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 116.69 133.48 90)
+			(at 109.982 134.366 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5364,7 +5374,7 @@
 		(dnp no)
 		(uuid "d139835a-3255-4643-82c7-c2087211954d")
 		(property "Reference" "C508"
-			(at 124.65 131.08 90)
+			(at 123.698 129.032 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5374,7 +5384,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 126.85 133.48 90)
+			(at 120.142 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5630,7 +5640,7 @@
 		(dnp no)
 		(uuid "e0d377d9-741c-45e1-8108-a9b3e28968f0")
 		(property "Reference" "C503"
-			(at 72.58 35.83 0)
+			(at 71.374 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5640,7 +5650,7 @@
 			)
 		)
 		(property "Value" "100nF 50V"
-			(at 73.13 38.23 0)
+			(at 67.31 40.132 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5753,7 +5763,7 @@
 		(dnp no)
 		(uuid "e6915588-738e-4c76-bd21-f2af58e723f1")
 		(property "Reference" "C505"
-			(at 104.33 131.08 90)
+			(at 102.87 129.286 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5763,7 +5773,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 106.53 133.48 90)
+			(at 99.822 134.366 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5855,7 +5865,7 @@
 	)
 	(symbol
 		(lib_id "sthymuli_jlc:R")
-		(at 129.54 146.05 0)
+		(at 129.54 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5865,7 +5875,7 @@
 		(dnp no)
 		(uuid "e7fe7e80-427c-4c35-83fc-052e919e9533")
 		(property "Reference" "R502"
-			(at 132.99 145.05 0)
+			(at 132.99 139.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5875,7 +5885,7 @@
 			)
 		)
 		(property "Value" "56k"
-			(at 134.64 147.45 0)
+			(at 134.64 142.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5885,7 +5895,7 @@
 			)
 		)
 		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
-			(at 129.54 146.05 0)
+			(at 129.54 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5896,7 +5906,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 146.05 0)
+			(at 129.54 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5907,7 +5917,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 129.54 146.05 0)
+			(at 129.54 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5918,7 +5928,7 @@
 			)
 		)
 		(property "LCSC" "C23206"
-			(at 129.54 146.05 0)
+			(at 129.54 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5929,7 +5939,7 @@
 			)
 		)
 		(property "JSON_Ref" "R12"
-			(at 129.54 146.05 0)
+			(at 129.54 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5940,7 +5950,7 @@
 			)
 		)
 		(property "Power_Section" "boost_5v"
-			(at 129.54 146.05 0)
+			(at 129.54 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

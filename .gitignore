@@ -4,6 +4,8 @@
 # KiCad automatic backups and local history (machine-local, large)
 *-backups/
 .history/
+.history
+.claude/
 
 # KiCad caches and autosaves
 fp-info-cache

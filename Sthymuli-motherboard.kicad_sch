@@ -3780,6 +3780,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sthymuli_jlc:FerriteBead"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "sthymuli_jlc:L_0805_2012Metric"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sthymuli_jlc:HC-RJ45-5JA-1-1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -8540,7 +8705,7 @@
 		)
 		(uuid "15a364f2-9098-4279-a01f-78e9a8027f47")
 	)
-	(text "This circuit Enable the 3V3 bus while pressed.\nIt also maintain the RST button while pressed.\n22uF hold the bus active for ~2s after the buttons\nis realeased for the ESP to boot and hold the bus"
+	(text "SW101 (PWR): pressing it enables both rails (RAIL_EN) and pulls PWR_BTN (IO41) low via Q101.\nC106 22uF holds RAIL_EN for ~2 s after release so the ESP can boot and assert ESP_PWR_HOLD (IO21)."
 		(exclude_from_sim no)
 		(at 102.108 218.694 0)
 		(effects
@@ -9045,7 +9210,7 @@
 		)
 		(uuid "d8849a86-51f4-43d4-b16a-fc649782260c")
 	)
-	(text "RST button, non latching"
+	(text "SW102 = BOOT (IO0), non latching: hold it during reset / power-up for download mode"
 		(exclude_from_sim no)
 		(at 491.236 313.182 0)
 		(effects
@@ -9077,7 +9242,7 @@
 		)
 		(uuid "e7972e57-bcbb-4e5b-8729-1aee26b8268b")
 	)
-	(text "PWR/RST"
+	(text "PWR"
 		(exclude_from_sim no)
 		(at 99.314 173.99 0)
 		(effects
@@ -9440,12 +9605,6 @@
 		(uuid "729c0b80-c175-4b17-862d-65c3d358f5ee")
 	)
 	(junction
-		(at 297.18 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "747f1028-e717-4e8f-8850-734536af200f")
-	)
-	(junction
 		(at 521.97 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9762,10 +9921,6 @@
 		(uuid "01a8527e-d951-4e5b-b9d8-66d74edbd097")
 	)
 	(no_connect
-		(at 90.17 80.01)
-		(uuid "140b2ac6-bd31-4583-a2aa-39e36dd82145")
-	)
-	(no_connect
 		(at 316.23 308.61)
 		(uuid "246550e0-e4c1-4c35-aa39-e85293fb0934")
 	)
@@ -9778,16 +9933,8 @@
 		(uuid "3185e6f6-fdd5-4308-b432-25ea9227851a")
 	)
 	(no_connect
-		(at 90.17 82.55)
-		(uuid "31ad5595-0322-4f40-8ad0-a2e2765ff935")
-	)
-	(no_connect
 		(at 90.17 76.2)
 		(uuid "3572bc5e-2f16-4a67-b5b0-fda770eb28f2")
-	)
-	(no_connect
-		(at 104.14 292.1)
-		(uuid "51674cc6-805c-49e2-9e00-7ce75ad2835a")
 	)
 	(no_connect
 		(at 134.62 279.4)
@@ -9832,10 +9979,6 @@
 	(no_connect
 		(at 525.78 242.57)
 		(uuid "aacf9f03-23b8-4592-a1bd-709a82e10a2c")
-	)
-	(no_connect
-		(at 111.76 81.28)
-		(uuid "b2ab334a-5d68-467e-89cf-b74a35eeb85e")
 	)
 	(no_connect
 		(at 90.17 73.66)
@@ -10722,6 +10865,16 @@
 			(type default)
 		)
 		(uuid "261473c2-fab4-4299-8a53-35309ef3a97c")
+	)
+	(wire
+		(pts
+			(xy 90.17 80.01) (xy 90.17 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2671545e-f8d5-41bd-bca8-b084f4734517")
 	)
 	(wire
 		(pts
@@ -11745,16 +11898,6 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 66.04) (xy 297.18 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "538ee490-0f2f-422a-8f56-5283ef20e047")
-	)
-	(wire
-		(pts
 			(xy 69.85 92.71) (xy 90.17 92.71)
 		)
 		(stroke
@@ -12375,6 +12518,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 81.28) (xy 113.03 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d294ba-17e4-49c8-8f88-f486ddb61ac5")
+	)
+	(wire
+		(pts
 			(xy 82.55 193.04) (xy 82.55 198.12)
 		)
 		(stroke
@@ -12502,6 +12655,16 @@
 			(type default)
 		)
 		(uuid "76ed4132-770f-4859-8073-2fa172599921")
+	)
+	(wire
+		(pts
+			(xy 111.76 81.28) (xy 113.03 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77aea681-fe58-471b-b2a8-0e3a5703cfff")
 	)
 	(wire
 		(pts
@@ -12795,6 +12958,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 125.73) (xy 101.6 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84fbbe1b-8c70-48f5-8e44-726a9ee25a89")
+	)
+	(wire
+		(pts
 			(xy 519.43 58.42) (xy 519.43 59.69)
 		)
 		(stroke
@@ -12902,16 +13075,6 @@
 			(type default)
 		)
 		(uuid "893f0c82-4206-494c-8eed-78b206299cac")
-	)
-	(wire
-		(pts
-			(xy 312.42 66.04) (xy 297.18 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a592c59-85eb-424f-842f-69d2de22438b")
 	)
 	(wire
 		(pts
@@ -13855,6 +14018,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 66.04) (xy 309.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bce56c9a-fe1f-40e5-9e52-30071ba4ecf5")
+	)
+	(wire
+		(pts
 			(xy 330.2 166.37) (xy 350.52 166.37)
 		)
 		(stroke
@@ -13992,6 +14165,16 @@
 			(type default)
 		)
 		(uuid "c055b798-a737-43a0-9511-64cea0fd2e38")
+	)
+	(wire
+		(pts
+			(xy 104.14 292.1) (xy 102.87 292.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c14becac-ba4d-43ac-a3c7-c2af69c4e3c4")
 	)
 	(wire
 		(pts
@@ -14432,6 +14615,16 @@
 			(type default)
 		)
 		(uuid "d6188dcf-7e34-455c-9e30-7185649c14bd")
+	)
+	(wire
+		(pts
+			(xy 421.64 86.36) (xy 426.72 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6577e1e-2f24-4ca7-8308-60c26e14dd33")
 	)
 	(wire
 		(pts
@@ -15373,6 +15566,16 @@
 		)
 		(uuid "fff95d6a-c14d-4376-9f08-970dc1c50189")
 	)
+	(label "3V3_ANA"
+		(at 421.64 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "428c6909-2d85-413b-8558-359aea4d9b34")
+	)
 	(label "MICBIAS12"
 		(at 411.48 53.34 0)
 		(effects
@@ -15402,6 +15605,16 @@
 			(justify left bottom)
 		)
 		(uuid "9bb21be5-83a9-4835-bb45-5128da23e76d")
+	)
+	(label "3V3_ANA"
+		(at 373.38 62.23 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9a7bca5-8da5-4b9b-a2e1-42d757859b30")
 	)
 	(label "MICBIAS34"
 		(at 394.97 81.28 0)
@@ -15533,7 +15746,7 @@
 			)
 		)
 	)
-	(global_label "BAT-WEST"
+	(global_label "B-"
 		(shape passive)
 		(at 434.34 224.79 180)
 		(fields_autoplaced yes)
@@ -15701,7 +15914,7 @@
 			)
 		)
 	)
-	(global_label "BAT-NORTH"
+	(global_label "B-"
 		(shape passive)
 		(at 518.16 224.79 180)
 		(fields_autoplaced yes)
@@ -15773,7 +15986,7 @@
 			)
 		)
 	)
-	(global_label "BAT-NORTH"
+	(global_label "B-"
 		(shape passive)
 		(at 146.05 109.22 180)
 		(fields_autoplaced yes)
@@ -15869,7 +16082,7 @@
 			)
 		)
 	)
-	(global_label "BAT-EAST"
+	(global_label "B-"
 		(shape passive)
 		(at 146.05 115.57 180)
 		(fields_autoplaced yes)
@@ -16373,7 +16586,7 @@
 			)
 		)
 	)
-	(global_label "BAT-WEST"
+	(global_label "B-"
 		(shape passive)
 		(at 146.05 128.27 180)
 		(fields_autoplaced yes)
@@ -16589,6 +16802,30 @@
 			)
 		)
 	)
+	(global_label "CH224K_PG"
+		(shape bidirectional)
+		(at 101.6 128.27 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6297d2a2-43e7-4083-a1a1-357ddf3521f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "SDA_WEST"
 		(shape bidirectional)
 		(at 440.69 245.11 180)
@@ -16733,7 +16970,7 @@
 			)
 		)
 	)
-	(global_label "BAT-SOUTH"
+	(global_label "B-"
 		(shape passive)
 		(at 146.05 121.92 180)
 		(fields_autoplaced yes)
@@ -16853,6 +17090,30 @@
 			)
 		)
 	)
+	(global_label "CH224K_PG"
+		(shape bidirectional)
+		(at 102.87 292.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7bf77a79-9785-4dcf-9bc2-1c844f4ef77f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 292.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "SDA_EAST"
 		(shape bidirectional)
 		(at 170.18 365.76 270)
@@ -16877,7 +17138,7 @@
 			)
 		)
 	)
-	(global_label "BAT-SOUTH"
+	(global_label "B-"
 		(shape passive)
 		(at 364.49 224.79 180)
 		(fields_autoplaced yes)
@@ -17933,6 +18194,30 @@
 			)
 		)
 	)
+	(global_label "CH224K_PG"
+		(shape bidirectional)
+		(at 113.03 86.36 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c84f3449-0502-4c6d-a19c-b3b5dc057323")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.03 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "PWR_BTN"
 		(shape input)
 		(at 137.16 294.64 0)
@@ -18581,7 +18866,7 @@
 			)
 		)
 	)
-	(global_label "BAT-EAST"
+	(global_label "B-"
 		(shape passive)
 		(at 281.94 224.79 180)
 		(fields_autoplaced yes)
@@ -23123,7 +23408,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "sthymuli:XKB5858"
+		(property "Footprint" "sthymuli_jlc:XKB5858"
 			(at 93.98 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -24454,8 +24739,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 135.89 364.49 90)
+		(lib_id "power:+3V3")
+		(at 135.89 364.49 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24475,7 +24760,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "+3V3"
 			(at 140.97 364.49 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24525,6 +24810,83 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 426.72 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a2f12f0-b36c-489b-8f45-ea611ad798fa")
+		(property "Reference" "#FLG0111"
+			(at 426.72 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 432.054 82.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 426.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 426.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 426.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50a42c49-096c-4d7a-95a2-36f7518a5aac")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#FLG0111")
 					(unit 1)
 				)
 			)
@@ -25206,7 +25568,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "sthymuli:XKB5858"
+		(property "Footprint" "sthymuli_jlc:XKB5858"
 			(at 140.97 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -25498,6 +25860,98 @@
 		)
 	)
 	(symbol
+		(lib_id "sthymuli_jlc:C")
+		(at 339.09 382.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "38a2a12b-16b5-4dc1-997c-cc3a31e488f3")
+		(property "Reference" "C135"
+			(at 341.63 381 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 341.63 383.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:C_0603_1608Metric"
+			(at 339.09 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor (SRV05-4 VDD decoupling, place at the ESD array)"
+			(at 339.09 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 339.09 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47c20d5a-78f4-4eb2-b4bb-7f4993f6ea4f")
+		)
+		(pin "2"
+			(uuid "24c15866-f13c-4d0f-9cb5-254cecd613eb")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "C135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sthymuli_jlc:Speaker")
 		(at 535.94 74.93 0)
 		(unit 1)
@@ -25530,7 +25984,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "sthymuli:Speaker KELIKING KLJ-01304T-08R07W"
+		(property "Footprint" "sthymuli_jlc:Speaker KELIKING KLJ-01304T-08R07W"
 			(at 535.94 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -26692,6 +27146,84 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 308.61 287.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "490fb3df-b0dd-4b55-a27e-29d003f2a2dd")
+		(property "Reference" "#PWR0170"
+			(at 308.61 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 305.31 283.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 308.61 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.61 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 308.61 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95869765-27ed-4481-a878-3751a3c272b0")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0170")
 					(unit 1)
 				)
 			)
@@ -28520,6 +29052,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 309.88 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "57d2c1a0-1812-45fe-a7e9-b2ecafefb456")
+		(property "Reference" "#PWR0165"
+			(at 309.88 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 306.578 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 309.88 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8518b5c3-48a1-4db4-8bc4-3a6de7e285fd")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sthymuli_jlc:R")
 		(at 280.67 350.52 90)
 		(unit 1)
@@ -30036,6 +30646,98 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "D107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sthymuli_jlc:FerriteBead")
+		(at 421.64 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6e9d2162-5b56-402d-bd87-09a3bf3bae15")
+		(property "Reference" "FB101"
+			(at 419.1 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "600R@100MHz"
+			(at 419.1 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:L_0805_2012Metric"
+			(at 421.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 421.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead: keeps class-D / digital noise off the ES7210 analog supply (VDDA/VDDM)"
+			(at 421.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1017"
+			(at 421.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c9b7597-cb80-41f7-a358-9257056d144d")
+		)
+		(pin "2"
+			(uuid "0286cfb7-57b3-424c-abaf-ceb3905bb561")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "FB101")
 					(unit 1)
 				)
 			)
@@ -32107,6 +32809,98 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "U108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sthymuli_jlc:C")
+		(at 308.61 290.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7aa8dfff-87e8-4193-a937-7a79736585af")
+		(property "Reference" "C136"
+			(at 311.15 289.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF 50V"
+			(at 311.15 292.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:C_0603_1608Metric"
+			(at 308.61 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.61 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor (SRV05-4 VDD decoupling, place at the ESD array)"
+			(at 308.61 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 308.61 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42807e12-19ef-4d56-a6d1-370f1ab76f4d")
+		)
+		(pin "2"
+			(uuid "c86cd5ce-75bf-4663-8b6c-5855008a3b46")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "C136")
 					(unit 1)
 				)
 			)
@@ -35052,6 +35846,98 @@
 		)
 	)
 	(symbol
+		(lib_id "sthymuli_jlc:C")
+		(at 426.72 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a210d893-38c5-451d-aba3-fe5d0ceb9bea")
+		(property "Reference" "C134"
+			(at 429.26 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF 25V"
+			(at 429.26 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:C_0805_2012Metric"
+			(at 426.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 426.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 426.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 426.72 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc99f899-84ea-4286-b7c8-a6c0bdcc8cd9")
+		)
+		(pin "2"
+			(uuid "58391d77-d456-48d3-bc71-a2fed07a95b1")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "C134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sthymuli_jlc:SolderJumper_2_Bridged")
 		(at 236.22 87.63 270)
 		(unit 1)
@@ -36220,6 +37106,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 339.09 386.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac902b4d-076f-425e-afc2-18c63fbb49f3")
+		(property "Reference" "#PWR0169"
+			(at 339.09 392.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 341.38 386.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 339.09 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "918cb5ab-d7cf-4ea5-b1ce-f4be7e364440")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0169")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 190.5 53.34 0)
 		(unit 1)
@@ -37125,7 +38088,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "33R"
 			(at 280.67 342.9 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37168,7 +38131,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22775"
+		(property "LCSC" "C23140"
 			(at 280.67 342.9 0)
 			(hide yes)
 			(show_name no)
@@ -37694,6 +38657,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 339.09 378.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6533fae-ea63-4858-ab2c-6638d59c3960")
+		(property "Reference" "#PWR0168"
+			(at 339.09 382.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 335.79 374.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 339.09 378.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b853283e-c23f-4181-836f-11fc5395e5d8")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0168")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sthymuli_jlc:R")
 		(at 177.8 359.41 0)
 		(unit 1)
@@ -37981,7 +39022,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "33R"
 			(at 280.67 346.71 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38024,7 +39065,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22775"
+		(property "LCSC" "C23140"
 			(at 280.67 346.71 0)
 			(hide yes)
 			(show_name no)
@@ -38259,6 +39300,83 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "C125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 426.72 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb417443-3c30-4173-ba51-273a1e67fc99")
+		(property "Reference" "#PWR0174"
+			(at 426.72 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 429.01 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 426.72 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 426.72 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 426.72 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bbc67dad-2435-4390-91a4-140447bdbf9a")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -39234,6 +40352,98 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sthymuli_jlc:R")
+		(at 101.6 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc445777-9dc1-4641-b1cd-f5ec90257c31")
+		(property "Reference" "R136"
+			(at 104.14 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 104.14 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CH224K PG open-drain pull-up"
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dd02b578-d514-498e-8197-e17301e2818c")
+		)
+		(pin "2"
+			(uuid "2a9fb596-c0ee-4f28-a41d-3d65cc22a76c")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "R136")
 					(unit 1)
 				)
 			)
@@ -41093,6 +42303,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 421.64 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e406b964-0ad1-42b1-b970-d1084ee41a8d")
+		(property "Reference" "#PWR0173"
+			(at 421.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 418.338 75.184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 421.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 421.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 421.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3ba8e63-cada-4785-a860-49c22fbb03e3")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0173")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 325.12 360.68 0)
 		(unit 1)
@@ -41682,8 +42970,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 100.33 358.14 270)
+		(lib_id "power:+3V3")
+		(at 100.33 358.14 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -41703,7 +42991,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "+3V3"
 			(at 95.25 358.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42117,7 +43405,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 373.38 62.23 0)
+		(at 101.6 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -42125,9 +43413,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ef8f298d-6a1b-4efa-80d3-70744094069b")
-		(property "Reference" "#PWR0140"
-			(at 373.38 66.04 0)
+		(uuid "f1f65869-da42-4f74-bd74-e3ca918d38a9")
+		(property "Reference" "#PWR0172"
+			(at 101.6 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42138,17 +43426,18 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 369.824 61.468 0)
+			(at 98.3 114.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 373.38 62.23 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42159,7 +43448,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 373.38 62.23 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42170,7 +43459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 373.38 62.23 0)
+			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42181,12 +43470,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d92f0dba-b354-4274-9c26-943be4a606bb")
+			(uuid "2916b5f3-fb7f-4972-ac37-9060b76e909a")
 		)
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
-					(reference "#PWR0140")
+					(reference "#PWR0172")
 					(unit 1)
 				)
 			)
@@ -42758,6 +44047,83 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 308.61 294.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa7163ee-517f-41bb-8eb7-a39fd4557d3e")
+		(property "Reference" "#PWR0171"
+			(at 308.61 300.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 310.9 294.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 308.61 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.61 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 308.61 294.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d67cd3d5-e558-44b8-8156-64ce636862a8")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)

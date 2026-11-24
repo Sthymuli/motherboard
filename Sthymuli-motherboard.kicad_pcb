@@ -20320,7 +20320,7 @@
 			)
 		)
 	)
-	(footprint "sthymuli:XKB5858"
+	(footprint "sthymuli_jlc:XKB5858"
 		(layer "F.Cu")
 		(uuid "5f5bcd66-dbff-4f10-aeab-10216b55bf78")
 		(at 159.55 71.1)
@@ -35277,7 +35277,7 @@
 			)
 		)
 	)
-	(footprint "sthymuli:XKB5858"
+	(footprint "sthymuli_jlc:XKB5858"
 		(layer "F.Cu")
 		(uuid "adb29e11-afcb-444e-aca1-28f505db7501")
 		(at 170.55 71.1)
@@ -38444,7 +38444,7 @@
 			)
 		)
 	)
-	(footprint "sthymuli:Speaker KELIKING KLJ-01304T-08R07W"
+	(footprint "sthymuli_jlc:Speaker KELIKING KLJ-01304T-08R07W"
 		(layer "F.Cu")
 		(uuid "c2308350-e5c9-481d-a07e-f499be4130d2")
 		(at 162.05 55.525)

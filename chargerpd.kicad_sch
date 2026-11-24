@@ -5819,7 +5819,7 @@
 		(dnp no)
 		(uuid "35f2c544-2e9e-49ab-9db2-e7f78c186b22")
 		(property "Reference" "C304"
-			(at 140.06 66.31 0)
+			(at 139.7 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5829,7 +5829,7 @@
 			)
 		)
 		(property "Value" "100nF 50V"
-			(at 141.71 68.71 0)
+			(at 142.494 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6513,7 +6513,7 @@
 			)
 		)
 		(property "Value" "100nF 50V"
-			(at 132.08 69.596 0)
+			(at 127.254 68.072 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8545,7 +8545,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 112.776 76.2 90)
+			(at 112.268 67.818 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9113,7 +9113,7 @@
 			)
 		)
 		(property "Value" "22uF 25V"
-			(at 121.412 74.168 90)
+			(at 120.142 70.104 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

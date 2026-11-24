@@ -1078,7 +1078,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VALUE CHOICES - TPS63802 (2 A buck-boost)\n- VOUT = 0.5 V x (1 + R22/R23) = 0.5 x (1 + 511k/91k) = 3.31 V.  R23 <= 100k (TI recommendation).\n- EN as UVLO on P+:  on above 1.1 V x (1 + R20/R21) = 1.1 x 2.37 = 2.6 V,  off below ~1.0 V x 2.37 = 2.37 V.\n- MODE must not float: R24 100k -> power-save by default.  ESP_BB_MODE high (via R26 1k, DNP if unused)\n    forces PWM, e.g. while recording audio.\n- PG is open-drain: R25 100k pull-up to +3V3 (optional).\n- L3 0.47 uH, Isat >= 4 A, DCR <= 25 mR: part TBD (TI suggests Coilcraft XFL4015-471ME), no footprint yet.\n- C114 / C115 2 x 22 uF output: second cap for ToF / Wi-Fi load steps."
+	(text "VALUE CHOICES - TPS63802 (U201, 2 A buck-boost)\n- VOUT = 0.5 V x (1 + R204/R205) = 0.5 x (1 + 511k/91k) = 3.31 V.  R205 <= 100k (TI recommendation).\n- EN = RAIL_EN directly (1.1 V rising threshold). No UVLO divider: the battery cut-off is done by firmware and the HY2112.\n- MODE must not float: R202 100k -> power-save by default.  ESP_BB_MODE (IO4) high via R201 1k forces PWM, e.g. while recording audio.\n- PG is open-drain: R203 100k pull-up to +3V3 (not used by firmware).\n- L201 0.47 uH PSPMAA0412-R47M-ANP (C705330): Isat 6 A, 21 mR (TI suggests XFL4015-471ME, 5.4 A).\n- C202 / C203 2 x 22 uF output: second cap for ToF / Wi-Fi load steps."
 		(exclude_from_sim no)
 		(at 99.06 123.698 0)
 		(effects
