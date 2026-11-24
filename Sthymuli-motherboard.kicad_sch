@@ -8684,7 +8684,7 @@
 		)
 		(uuid "11ee9159-f32d-4224-a286-a724e72275e8")
 	)
-	(text "Mic bias 2.2k. MK_x_P = capsule +, MK_x_N = capsule return"
+	(text "Mic bias, balanced: MICBIAS -> 1k (R125-R128) -> MK_x_P = capsule +;  MK_x_N = capsule - -> 1k (R137-R140) -> GND.\nThe capsule floats on the P/N pair: do NOT tie it to GND on the cardinal board."
 		(exclude_from_sim no)
 		(at 381 23.876 0)
 		(effects
@@ -9323,6 +9323,12 @@
 		(uuid "fdd72b14-32f3-4266-93cb-558ebc2378f1")
 	)
 	(junction
+		(at 523.24 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03898329-4d09-455e-9903-ac6d67170057")
+	)
+	(junction
 		(at 369.57 332.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9341,7 +9347,7 @@
 		(uuid "087f4e39-8b91-4d92-a5c1-3f3e70f9ed24")
 	)
 	(junction
-		(at 521.97 74.93)
+		(at 523.24 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "099ecece-6b49-42bf-aa78-2bbbeb88bb3c")
@@ -9851,6 +9857,12 @@
 		(uuid "dcb6cca0-b661-4dc6-8adf-bdae2bed6762")
 	)
 	(junction
+		(at 304.8 289.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de0c4c41-03ae-4786-a935-d6e6e6c4b0ec")
+	)
+	(junction
 		(at 420.37 237.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9867,6 +9879,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5a0c9b0-6a1c-4f98-ad75-fe32e9f00285")
+	)
+	(junction
+		(at 114.3 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5ec47bc-c080-4380-b1aa-2b874a6663ab")
 	)
 	(junction
 		(at 170.18 354.33)
@@ -10081,6 +10099,26 @@
 			(type default)
 		)
 		(uuid "0448a024-594b-419a-a359-16397127f7f1")
+	)
+	(wire
+		(pts
+			(xy 412.75 127) (xy 412.75 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050a68a0-2de5-42a2-8898-4ef3aa0c8efd")
+	)
+	(wire
+		(pts
+			(xy 304.8 300.99) (xy 304.8 298.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05435278-bb12-4b2b-aa12-48127fe001b4")
 	)
 	(wire
 		(pts
@@ -10604,6 +10642,16 @@
 	)
 	(wire
 		(pts
+			(xy 397.51 127) (xy 397.51 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1791085f-7b87-4388-80f7-4beb6cad62c4")
+	)
+	(wire
+		(pts
 			(xy 508 135.89) (xy 508 137.16)
 		)
 		(stroke
@@ -10644,7 +10692,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 199.39) (xy 113.03 195.58)
+			(xy 114.3 199.39) (xy 114.3 195.58)
 		)
 		(stroke
 			(width 0)
@@ -10881,6 +10929,16 @@
 			(type default)
 		)
 		(uuid "2671545e-f8d5-41bd-bca8-b084f4734517")
+	)
+	(wire
+		(pts
+			(xy 304.8 289.56) (xy 304.8 290.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2686f9ca-cb3e-48cf-941a-379b16e7b8e2")
 	)
 	(wire
 		(pts
@@ -11464,6 +11522,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 199.39) (xy 120.65 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa60eea-c897-4763-ab13-4cc588f82474")
+	)
+	(wire
+		(pts
 			(xy 193.04 66.04) (xy 193.04 54.61)
 		)
 		(stroke
@@ -11514,7 +11582,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 199.39) (xy 120.65 199.39)
+			(xy 113.03 199.39) (xy 114.3 199.39)
 		)
 		(stroke
 			(width 0)
@@ -11581,6 +11649,16 @@
 			(type default)
 		)
 		(uuid "4595ac4d-e687-498b-8b08-76d82f5760cf")
+	)
+	(wire
+		(pts
+			(xy 304.8 288.29) (xy 304.8 289.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "474f98c6-06ff-4cab-9290-250d40b93540")
 	)
 	(wire
 		(pts
@@ -11804,7 +11882,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 186.69) (xy 113.03 186.69)
+			(xy 523.24 69.85) (xy 521.97 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506bfa29-95cb-4609-85c1-e1b4483fd094")
+	)
+	(wire
+		(pts
+			(xy 115.57 186.69) (xy 114.3 186.69)
 		)
 		(stroke
 			(width 0)
@@ -11814,7 +11902,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 74.93) (xy 521.97 74.93)
+			(xy 514.35 74.93) (xy 523.24 74.93)
 		)
 		(stroke
 			(width 0)
@@ -12071,6 +12159,16 @@
 			(type default)
 		)
 		(uuid "5a1b7a71-8335-411e-85a7-da193df41875")
+	)
+	(wire
+		(pts
+			(xy 405.13 127) (xy 405.13 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a572146-2bae-4a4e-abc4-2402b09822e9")
 	)
 	(wire
 		(pts
@@ -12411,6 +12509,16 @@
 			(type default)
 		)
 		(uuid "6ad4d46b-2c6c-48f1-9160-0babf34291aa")
+	)
+	(wire
+		(pts
+			(xy 420.37 127) (xy 420.37 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae815e2-e12b-4222-884b-35997db0d7cf")
 	)
 	(wire
 		(pts
@@ -12814,7 +12922,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 69.85) (xy 521.97 69.85)
+			(xy 529.59 69.85) (xy 523.24 69.85)
 		)
 		(stroke
 			(width 0)
@@ -12874,7 +12982,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 186.69) (xy 113.03 187.96)
+			(xy 114.3 186.69) (xy 114.3 187.96)
 		)
 		(stroke
 			(width 0)
@@ -13794,7 +13902,7 @@
 	)
 	(wire
 		(pts
-			(xy 521.97 74.93) (xy 521.97 69.85)
+			(xy 523.24 74.93) (xy 523.24 69.85)
 		)
 		(stroke
 			(width 0)
@@ -14481,6 +14589,16 @@
 			(type default)
 		)
 		(uuid "cf95b627-4237-4d0c-a310-e9aaaa1416af")
+	)
+	(wire
+		(pts
+			(xy 308.61 308.61) (xy 308.61 289.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf9d9357-9172-41a3-96e9-3bb8d1e24e73")
 	)
 	(wire
 		(pts
@@ -15184,6 +15302,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 289.56) (xy 308.61 289.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd28f8f-897c-497f-bf7b-05998d58e5a5")
+	)
+	(wire
+		(pts
 			(xy 370.84 73.66) (xy 370.84 83.82)
 		)
 		(stroke
@@ -15344,7 +15472,7 @@
 	)
 	(wire
 		(pts
-			(xy 521.97 74.93) (xy 521.97 83.82)
+			(xy 523.24 74.93) (xy 523.24 83.82)
 		)
 		(stroke
 			(width 0)
@@ -15930,6 +16058,30 @@
 			)
 		)
 	)
+	(global_label "MK_EAST_N"
+		(shape bidirectional)
+		(at 397.51 124.46 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19916798-ff2a-4f23-87b3-a9f48da12909")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 397.51 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "B-"
 		(shape passive)
 		(at 518.16 224.79 180)
@@ -16359,6 +16511,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "MK_WEST_N"
+		(shape bidirectional)
+		(at 412.75 124.46 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b549ac9-e77a-406e-a75f-b13616d71ce7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 412.75 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -18260,7 +18436,7 @@
 	)
 	(global_label "ESP_PWR_HOLD"
 		(shape output)
-		(at 114.3 186.69 0)
+		(at 115.57 186.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18270,7 +18446,7 @@
 		)
 		(uuid "cbd8aefa-9779-469b-9090-c54c7247fd33")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.7994 186.69 0)
+			(at 133.0694 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18810,6 +18986,30 @@
 			)
 		)
 	)
+	(global_label "MK_NORTH_N"
+		(shape bidirectional)
+		(at 420.37 124.46 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f18e323c-c0df-49b1-812f-0db5a4201b74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 420.37 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "I2S_DSIN"
 		(shape output)
 		(at 289.56 91.44 180)
@@ -18927,6 +19127,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "MK_SOUTH_N"
+		(shape bidirectional)
+		(at 405.13 124.46 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f687c339-ed96-4343-8a97-32cb7a2c66fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 405.13 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -19962,7 +20186,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "1k"
 			(at 434.34 46.99 90)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -19983,7 +20207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf2201t5e_C4190.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf1001t5e_C21190.html"
 			(at 434.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -19994,7 +20218,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 2.2kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 434.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -20005,7 +20229,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4190"
+		(property "LCSC" "C21190"
 			(at 434.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -20016,7 +20240,7 @@
 				)
 			)
 		)
-		(property "Stock" "4049506"
+		(property "Stock" "39600858"
 			(at 434.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -20104,7 +20328,7 @@
 				)
 			)
 		)
-		(property "Part" "0603WAF2201T5E"
+		(property "Part" "0603WAF1001T5E"
 			(at 434.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -20115,7 +20339,7 @@
 				)
 			)
 		)
-		(property "Resistance" "2.2kΩ"
+		(property "Resistance" "1kΩ"
 			(at 434.34 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -21865,6 +22089,267 @@
 		)
 	)
 	(symbol
+		(lib_id "sthymuli_jlc:R")
+		(at 420.37 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1131219c-7883-4c75-8942-f0a0ed682803")
+		(property "Reference" "R140"
+			(at 422.91 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 422.91 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
+			(at 420.37 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420.37 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Balanced mic bias: MK_NORTH_N (capsule -) return to GND, matches the 1k feed resistor"
+			(at 420.37 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 420.37 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7298010d-bb9d-4554-9f55-9297e202ad3c")
+		)
+		(pin "2"
+			(uuid "b0c51205-580a-4ab1-bb2d-48c7b11aee27")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "R140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sthymuli_jlc:R")
+		(at 405.13 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1134b14f-73e8-494d-99ca-9962dfe362bc")
+		(property "Reference" "R138"
+			(at 407.67 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 407.67 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
+			(at 405.13 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 405.13 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Balanced mic bias: MK_SOUTH_N (capsule -) return to GND, matches the 1k feed resistor"
+			(at 405.13 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 405.13 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d0dd1d6-3cd9-46db-a506-159eae9449fb")
+		)
+		(pin "2"
+			(uuid "8e8498b1-330a-45cf-868e-4d971a595bfb")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "R138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 397.51 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1218e44c-2a78-42ae-ade0-5db721ddc43c")
+		(property "Reference" "#PWR0175"
+			(at 397.51 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 399.796 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 397.51 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 397.51 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 397.51 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9453aa05-35d2-4d99-a5cf-08bba104b164")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0175")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sthymuli_jlc:C")
 		(at 364.49 71.12 90)
 		(unit 1)
@@ -22639,7 +23124,7 @@
 	)
 	(symbol
 		(lib_id "sthymuli_jlc:BAT54WS")
-		(at 113.03 191.77 0)
+		(at 114.3 191.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22649,7 +23134,7 @@
 		(dnp no)
 		(uuid "1568b0e6-e591-429a-a71d-f7c807915cfe")
 		(property "Reference" "D104"
-			(at 115.57 191.77 90)
+			(at 116.84 191.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22659,7 +23144,7 @@
 			)
 		)
 		(property "Value" "BAT54WS"
-			(at 110.236 192.024 90)
+			(at 111.76 190.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22669,7 +23154,7 @@
 			)
 		)
 		(property "Footprint" "sthymuli_jlc:D_SOD-323"
-			(at 111.252 191.77 90)
+			(at 112.522 191.77 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22680,7 +23165,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308281443_hongjiacheng-BAT54WS_C7502694.pdf"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22691,7 +23176,7 @@
 			)
 		)
 		(property "Description" "30V Independent Type 200mA 1V@100mA SOD-323 Schottky Diodes ROHS"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22702,7 +23187,7 @@
 			)
 		)
 		(property "LCSC" "C7502694"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22713,7 +23198,7 @@
 			)
 		)
 		(property "Stock" "82421"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22724,7 +23209,7 @@
 			)
 		)
 		(property "Price" "0.014USD"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22735,7 +23220,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22746,7 +23231,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22757,7 +23242,7 @@
 			)
 		)
 		(property "Attrition Qty" "6"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22768,7 +23253,7 @@
 			)
 		)
 		(property "Class" "Preferred Component"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22779,7 +23264,7 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22790,7 +23275,7 @@
 			)
 		)
 		(property "Manufacturer" "hongjiacheng"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22801,7 +23286,7 @@
 			)
 		)
 		(property "Part" "BAT54WS"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22812,7 +23297,7 @@
 			)
 		)
 		(property "Forward Voltage (Vf@If)" "1V@100mA"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22823,7 +23308,7 @@
 			)
 		)
 		(property "Reverse Voltage (Vr)" "30V"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22834,7 +23319,7 @@
 			)
 		)
 		(property "Average Rectified Current (Io)" "200mA"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22845,7 +23330,7 @@
 			)
 		)
 		(property "Diode Configuration" "Single"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22856,7 +23341,7 @@
 			)
 		)
 		(property "Peak forward surge current" "600mA"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22867,7 +23352,7 @@
 			)
 		)
 		(property "Reverse Leakage Current (Ir)" "2uA"
-			(at 113.03 191.77 0)
+			(at 114.3 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23400,7 +23885,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "21239da8-1b1e-4a02-85d2-8b39d190ab75")
 		(property "Reference" "SW101"
 			(at 99.06 191.7699 90)
@@ -23414,7 +23898,7 @@
 			)
 		)
 		(property "Value" "XKB5858-W-F"
-			(at 99.06 194.3099 90)
+			(at 98.298 194.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23505,7 +23989,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "1k"
 			(at 411.48 46.99 90)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23526,7 +24010,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf2201t5e_C4190.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf1001t5e_C21190.html"
 			(at 411.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23537,7 +24021,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 2.2kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 411.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23548,7 +24032,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4190"
+		(property "LCSC" "C21190"
 			(at 411.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23559,7 +24043,7 @@
 				)
 			)
 		)
-		(property "Stock" "4049506"
+		(property "Stock" "39600858"
 			(at 411.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23647,7 +24131,7 @@
 				)
 			)
 		)
-		(property "Part" "0603WAF2201T5E"
+		(property "Part" "0603WAF1001T5E"
 			(at 411.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23658,7 +24142,7 @@
 				)
 			)
 		)
-		(property "Resistance" "2.2kΩ"
+		(property "Resistance" "1kΩ"
 			(at 411.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23928,7 +24412,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "1k"
 			(at 426.72 46.99 90)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23949,7 +24433,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf2201t5e_C4190.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf1001t5e_C21190.html"
 			(at 426.72 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23960,7 +24444,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 2.2kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 426.72 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23971,7 +24455,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4190"
+		(property "LCSC" "C21190"
 			(at 426.72 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -23982,7 +24466,7 @@
 				)
 			)
 		)
-		(property "Stock" "4049506"
+		(property "Stock" "39600858"
 			(at 426.72 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -24070,7 +24554,7 @@
 				)
 			)
 		)
-		(property "Part" "0603WAF2201T5E"
+		(property "Part" "0603WAF1001T5E"
 			(at 426.72 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -24081,7 +24565,7 @@
 				)
 			)
 		)
-		(property "Resistance" "2.2kΩ"
+		(property "Resistance" "1kΩ"
 			(at 426.72 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -25219,6 +25703,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 405.13 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "31bc462d-bc38-4944-aeb1-2b6209cb3744")
+		(property "Reference" "#PWR0176"
+			(at 405.13 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 407.416 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 405.13 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 405.13 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 405.13 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f66989a-0244-4292-a9c8-25e811081e7a")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0176")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 337.82 365.76 0)
 		(unit 1)
 		(body_style 1)
@@ -25475,7 +26036,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 521.97 83.82 0)
+		(at 523.24 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25485,7 +26046,7 @@
 		(dnp no)
 		(uuid "35ab36c4-a50b-46ea-9dd6-235282531461")
 		(property "Reference" "#PWR0151"
-			(at 521.97 90.17 0)
+			(at 523.24 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25496,7 +26057,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 524.256 83.82 0)
+			(at 525.526 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25506,7 +26067,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 521.97 83.82 0)
+			(at 523.24 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25517,7 +26078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 521.97 83.82 0)
+			(at 523.24 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25528,7 +26089,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 521.97 83.82 0)
+			(at 523.24 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25870,6 +26431,83 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "C122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 420.37 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "389551cd-f2cb-47cf-8283-cc5f9c695ebd")
+		(property "Reference" "#PWR0178"
+			(at 420.37 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 422.656 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 420.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 420.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d19f278c-3922-4bb5-8327-686e8ba3b6aa")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
@@ -26286,6 +26924,83 @@
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
 					(reference "C118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 412.75 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f9690b3-5c1e-4994-9301-b0a2612ac314")
+		(property "Reference" "#PWR0177"
+			(at 412.75 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 415.036 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 412.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 412.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 412.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10e12dd9-08ce-45a0-b7eb-79638796eed1")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "#PWR0177")
 					(unit 1)
 				)
 			)
@@ -27169,7 +27884,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 308.61 287.02 0)
+		(at 304.8 288.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27179,7 +27894,7 @@
 		(dnp no)
 		(uuid "490fb3df-b0dd-4b55-a27e-29d003f2a2dd")
 		(property "Reference" "#PWR0170"
-			(at 308.61 290.83 0)
+			(at 304.8 292.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27190,7 +27905,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 305.31 283.46 0)
+			(at 301.5 284.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27201,7 +27916,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 308.61 287.02 0)
+			(at 304.8 288.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27212,7 +27927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 308.61 287.02 0)
+			(at 304.8 288.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27223,7 +27938,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 308.61 287.02 0)
+			(at 304.8 288.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32832,7 +33547,7 @@
 	)
 	(symbol
 		(lib_id "sthymuli_jlc:C")
-		(at 308.61 290.83 0)
+		(at 304.8 294.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -32842,7 +33557,7 @@
 		(dnp no)
 		(uuid "7aa8dfff-87e8-4193-a937-7a79736585af")
 		(property "Reference" "C136"
-			(at 311.15 289.56 0)
+			(at 299.466 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32853,7 +33568,7 @@
 			)
 		)
 		(property "Value" "100nF 50V"
-			(at 311.15 292.1 0)
+			(at 293.878 296.926 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32864,7 +33579,7 @@
 			)
 		)
 		(property "Footprint" "sthymuli_jlc:C_0603_1608Metric"
-			(at 308.61 290.83 0)
+			(at 304.8 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32875,7 +33590,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 308.61 290.83 0)
+			(at 304.8 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32886,7 +33601,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor (SRV05-4 VDD decoupling, place at the ESD array)"
-			(at 308.61 290.83 0)
+			(at 304.8 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32897,7 +33612,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 308.61 290.83 0)
+			(at 304.8 294.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36202,6 +36917,98 @@
 		)
 	)
 	(symbol
+		(lib_id "sthymuli_jlc:R")
+		(at 412.75 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a4dd8351-8568-42e4-afdd-f75cab6ff26f")
+		(property "Reference" "R139"
+			(at 415.29 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 415.29 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
+			(at 412.75 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 412.75 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Balanced mic bias: MK_WEST_N (capsule -) return to GND, matches the 1k feed resistor"
+			(at 412.75 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 412.75 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6cc8ccc6-3278-454c-a978-10d40f61e8a3")
+		)
+		(pin "2"
+			(uuid "f54fe7e0-0002-4b25-81fe-b9ad241a7e38")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "R139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 82.55 181.61 0)
 		(unit 1)
@@ -37607,7 +38414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "1k"
 			(at 403.86 46.99 90)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -37628,7 +38435,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf2201t5e_C4190.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf1001t5e_C21190.html"
 			(at 403.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -37639,7 +38446,7 @@
 				)
 			)
 		)
-		(property "Description" "-55℃~+155℃ 100mW 2.2kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "-55℃~+155℃ 100mW 1kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS"
 			(at 403.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -37650,7 +38457,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4190"
+		(property "LCSC" "C21190"
 			(at 403.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -37661,7 +38468,7 @@
 				)
 			)
 		)
-		(property "Stock" "4049506"
+		(property "Stock" "39600858"
 			(at 403.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -37749,7 +38556,7 @@
 				)
 			)
 		)
-		(property "Part" "0603WAF2201T5E"
+		(property "Part" "0603WAF1001T5E"
 			(at 403.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -37760,7 +38567,7 @@
 				)
 			)
 		)
-		(property "Resistance" "2.2kΩ"
+		(property "Resistance" "1kΩ"
 			(at 403.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -40810,84 +41617,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 308.61 308.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ced737b1-1240-4568-ad87-5991b73ccc0b")
-		(property "Reference" "#PWR0160"
-			(at 308.61 312.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 305.308 305.054 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 308.61 308.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 308.61 308.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 308.61 308.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ba8487a4-a23a-499f-a2fa-4bd051986220")
-		)
-		(instances
-			(project "Sthymuli-motherboard"
-				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
-					(reference "#PWR0160")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 306.07 392.43 0)
 		(unit 1)
@@ -43064,6 +43793,98 @@
 	)
 	(symbol
 		(lib_id "sthymuli_jlc:R")
+		(at 397.51 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec4f1d5b-870b-4034-87db-2910c2ce71b5")
+		(property "Reference" "R137"
+			(at 400.05 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 400.05 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
+			(at 397.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 397.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Balanced mic bias: MK_EAST_N (capsule -) return to GND, matches the 1k feed resistor"
+			(at 397.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 397.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "afd7d734-9cf0-43d3-9de1-734ffbd6f384")
+		)
+		(pin "2"
+			(uuid "bfe3cf9f-0408-4584-aabe-4ccbdeadf132")
+		)
+		(instances
+			(project "Sthymuli-motherboard"
+				(path "/a56c3281-40b7-4048-95ca-500415dc80a4"
+					(reference "R137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sthymuli_jlc:R")
 		(at 215.9 359.41 0)
 		(unit 1)
 		(body_style 1)
@@ -44070,7 +44891,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 308.61 294.64 0)
+		(at 304.8 300.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -44080,7 +44901,7 @@
 		(dnp no)
 		(uuid "fa7163ee-517f-41bb-8eb7-a39fd4557d3e")
 		(property "Reference" "#PWR0171"
-			(at 308.61 300.99 0)
+			(at 304.8 307.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44091,7 +44912,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 310.9 294.64 0)
+			(at 302.26 300.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44101,7 +44922,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 308.61 294.64 0)
+			(at 304.8 300.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44112,7 +44933,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 308.61 294.64 0)
+			(at 304.8 300.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44123,7 +44944,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 308.61 294.64 0)
+			(at 304.8 300.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
