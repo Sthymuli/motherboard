@@ -132,4 +132,15 @@
 		(uuid "277e1f65-cd88-490b-97a8-3d58c15f322d")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/sthymuli_jlc.3dshapes/XKB5858-W-F.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

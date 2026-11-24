@@ -117,4 +117,15 @@
 		(uuid "1bf8614b-db65-4ad4-b486-54cad8821116")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/sthymuli_jlc.3dshapes/KLJ-01304T-08R07W.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
