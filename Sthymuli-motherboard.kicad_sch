@@ -9749,6 +9749,12 @@
 		(uuid "bb3a1d69-e354-4c01-9c9d-49d72abddb99")
 	)
 	(junction
+		(at 97.79 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bdb466fd-cde5-47eb-894d-7541befdbc27")
+	)
+	(junction
 		(at 193.04 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11588,7 +11594,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 199.39) (xy 99.06 199.39)
+			(xy 95.25 199.39) (xy 97.79 199.39)
 		)
 		(stroke
 			(width 0)
@@ -12655,6 +12661,16 @@
 			(type default)
 		)
 		(uuid "76ed4132-770f-4859-8073-2fa172599921")
+	)
+	(wire
+		(pts
+			(xy 97.79 199.39) (xy 99.06 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7791b3c1-397b-4ee7-8dff-68d3294b9f42")
 	)
 	(wire
 		(pts
@@ -14928,7 +14944,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 198.12) (xy 99.06 199.39)
+			(xy 97.79 198.12) (xy 97.79 199.39)
 		)
 		(stroke
 			(width 0)
@@ -15038,7 +15054,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 185.42) (xy 99.06 187.96)
+			(xy 97.79 185.42) (xy 97.79 187.96)
 		)
 		(stroke
 			(width 0)
@@ -23376,7 +23392,7 @@
 	)
 	(symbol
 		(lib_id "sthymuli_jlc:SW_Push")
-		(at 99.06 193.04 90)
+		(at 97.79 193.04 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23387,7 +23403,7 @@
 		(fields_autoplaced yes)
 		(uuid "21239da8-1b1e-4a02-85d2-8b39d190ab75")
 		(property "Reference" "SW101"
-			(at 100.33 191.7699 90)
+			(at 99.06 191.7699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23398,7 +23414,7 @@
 			)
 		)
 		(property "Value" "XKB5858-W-F"
-			(at 100.33 194.3099 90)
+			(at 99.06 194.3099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23409,7 +23425,7 @@
 			)
 		)
 		(property "Footprint" "sthymuli_jlc:XKB5858"
-			(at 93.98 193.04 0)
+			(at 92.71 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23420,7 +23436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 193.04 0)
+			(at 92.71 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23431,7 +23447,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 99.06 193.04 0)
+			(at 97.79 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23442,7 +23458,7 @@
 			)
 		)
 		(property "LCSC" "C2884737"
-			(at 93.98 193.04 0)
+			(at 92.71 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40281,7 +40297,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 99.06 185.42 0)
+		(at 97.79 185.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40292,7 +40308,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6f62b0a-4345-4e86-888c-1f54e0c6b518")
 		(property "Reference" "#PWR0107"
-			(at 99.06 189.23 0)
+			(at 97.79 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40303,7 +40319,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 99.06 181.61 0)
+			(at 97.79 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40313,7 +40329,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 185.42 0)
+			(at 97.79 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40324,7 +40340,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 185.42 0)
+			(at 97.79 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40335,7 +40351,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 99.06 185.42 0)
+			(at 97.79 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1924,6 +1924,16 @@
 		)
 		(uuid "fffc65ff-5406-4890-b101-b9474b5eeee1")
 	)
+	(label "B_neg"
+		(at 137.16 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e70ed88-bdc3-4456-8af8-559dbe125645")
+	)
 	(label "PROT_VDD"
 		(at 144.78 66.04 0)
 		(effects
