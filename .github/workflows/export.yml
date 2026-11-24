@@ -1,0 +1,63 @@
+name: Export KiCad outputs
+
+# Schematic PDF, layout PDF, 3D STEP and 3D renders -> exports/
+# On main the results are committed back; on PRs they are attached as an artifact.
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - '**.kicad_pro'
+      - 'lib/**'
+      - 'scripts/**'
+      - '.github/workflows/export.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: export-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  export:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install KiCad 10
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends kicad xvfb
+          kicad-cli version
+          python3 -c "import pcbnew; print('pcbnew', pcbnew.Version())"
+
+      - name: Export PDFs, STEP and 3D renders
+        # xvfb gives the 3D renderer a display on the headless runner
+        run: xvfb-run -a scripts/export.sh
+
+      - name: Upload exports
+        uses: actions/upload-artifact@v4
+        with:
+          name: kicad-exports
+          path: exports/
+
+      - name: Commit exports back to the repo
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add exports
+          if git diff --cached --quiet; then
+            echo "No changes in exports/."
+            exit 0
+          fi
+          git commit -m "Auto-export KiCad PDFs, STEP and 3D renders"
+          git pull --rebase
+          git push

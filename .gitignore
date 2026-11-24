@@ -17,3 +17,6 @@ _autosave-*
 # OS / editor clutter
 .DS_Store
 Thumbs.db
+
+# CI export temp board
+_ci_onboard.*
