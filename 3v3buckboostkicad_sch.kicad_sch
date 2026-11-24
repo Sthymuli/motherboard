@@ -5,324 +5,6 @@
 	(uuid "35b9e994-e2cd-44fc-be9d-1040523c9033")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
@@ -768,6 +450,324 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "sthymuli_jlc:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sthymuli_jlc:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sthymuli_jlc:TPS63802DLAR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -894,7 +894,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -11.43 5.08 0)
 					(length 2.54)
 					(name "EN"
@@ -912,7 +912,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -11.43 2.54 0)
 					(length 2.54)
 					(name "MODE"
@@ -930,7 +930,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -11.43 0 0)
 					(length 2.54)
 					(name "AGND"
@@ -948,7 +948,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -11.43 -2.54 0)
 					(length 2.54)
 					(name "FB"
@@ -966,7 +966,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin open_collector line
 					(at -11.43 -5.08 0)
 					(length 2.54)
 					(name "PG"
@@ -984,7 +984,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 11.43 -5.08 180)
 					(length 2.54)
 					(name "VOUT"
@@ -1002,7 +1002,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 -2.54 180)
 					(length 2.54)
 					(name "L2"
@@ -1020,7 +1020,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 11.43 0 180)
 					(length 2.54)
 					(name "GND"
@@ -1038,7 +1038,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 11.43 2.54 180)
 					(length 2.54)
 					(name "L1"
@@ -1056,7 +1056,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 11.43 5.08 180)
 					(length 2.54)
 					(name "VIN"
@@ -1637,7 +1637,7 @@
 		(uuid "ff67aebf-72b1-4e6e-8a8c-d8eaa44c759e")
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "sthymuli_jlc:R")
 		(at 104.14 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -1647,7 +1647,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "108bc991-a0f5-455b-9e08-8ea4afadc4b7")
-		(property "Reference" "R85"
+		(property "Reference" "R202"
 			(at 107.59 68.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1667,7 +1667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
 			(at 104.14 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -1700,7 +1700,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C25803"
 			(at 104.14 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -1753,14 +1753,14 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "R85")
+					(reference "R202")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
+		(lib_id "sthymuli_jlc:L")
 		(at 144.78 106.68 90)
 		(unit 1)
 		(body_style 1)
@@ -1770,7 +1770,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17a98a05-9d37-4ca5-9339-62434605f682")
-		(property "Reference" "L8"
+		(property "Reference" "L201"
 			(at 144.78 104.08 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1780,7 +1780,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47uH Isat>=4A DCR<=25mR"
+		(property "Value" "0.47uH Isat 6A 21mR (PSPMAA0412-R47M-ANP)"
 			(at 144.78 109.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1801,7 +1801,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C705330.html"
 			(at 144.78 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -1823,7 +1823,7 @@
 				)
 			)
 		)
-		(property "LCSC" "TBD"
+		(property "LCSC" "C705330"
 			(at 144.78 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -1876,7 +1876,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "L8")
+					(reference "L201")
 					(unit 1)
 				)
 			)
@@ -1893,7 +1893,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b67e68d-f893-4a5f-9c7d-16b07051cc56")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR0207"
 			(at 180.34 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -1953,7 +1953,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0302")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -1970,7 +1970,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1de3426a-1a29-4397-b62a-54153a481e40")
-		(property "Reference" "C26"
+		(property "Reference" "C201"
 			(at 115.21 108.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1990,7 +1990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sthymuli_jlc:C0805"
+		(property "Footprint" "sthymuli_jlc:C_0805_2012Metric"
 			(at 111.76 109.22 90)
 			(hide yes)
 			(show_name no)
@@ -2065,7 +2065,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "C26")
+					(reference "C201")
 					(unit 1)
 				)
 			)
@@ -2082,7 +2082,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2112c4d8-9068-4d10-b6cb-80450c2949e5")
-		(property "Reference" "#PWR0257"
+		(property "Reference" "#PWR0202"
 			(at 111.76 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2142,14 +2142,14 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0257")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "sthymuli_jlc:R")
 		(at 95.25 66.04 270)
 		(unit 1)
 		(body_style 1)
@@ -2159,7 +2159,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24580d2b-03e5-4cf5-88ed-05cf2eef8e87")
-		(property "Reference" "R82"
+		(property "Reference" "R201"
 			(at 95.25 63.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2179,7 +2179,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
 			(at 95.25 66.04 90)
 			(hide yes)
 			(show_name no)
@@ -2212,7 +2212,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C11702"
+		(property "LCSC" "C21190"
 			(at 95.25 66.04 90)
 			(hide yes)
 			(show_name no)
@@ -2265,7 +2265,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "R82")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -2282,7 +2282,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47be4e9f-e1fd-4cad-bf28-dc89139b9d23")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR0208"
 			(at 193.04 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2342,7 +2342,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0303")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -2359,7 +2359,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d80c0f0-f7de-4115-8133-5aa8e7e463b7")
-		(property "Reference" "#PWR0291"
+		(property "Reference" "#PWR0203"
 			(at 144.78 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2419,14 +2419,14 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0291")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "sthymuli_jlc:R")
 		(at 193.04 115.57 0)
 		(unit 1)
 		(body_style 1)
@@ -2436,7 +2436,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "528aacc4-6131-4595-9b62-9e139f62f8ee")
-		(property "Reference" "R88"
+		(property "Reference" "R205"
 			(at 196.49 114.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2446,7 +2446,7 @@
 				)
 			)
 		)
-		(property "Value" "91k 1%"
+		(property "Value" "91k"
 			(at 198.14 116.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2456,7 +2456,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
 			(at 193.04 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2489,7 +2489,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C4147"
+		(property "LCSC" "C23265"
 			(at 193.04 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2542,7 +2542,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "R88")
+					(reference "R205")
 					(unit 1)
 				)
 			)
@@ -2560,7 +2560,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ba1d6b8-916a-436e-8ca3-f25a931fae0d")
-		(property "Reference" "U19"
+		(property "Reference" "U201"
 			(at 129.54 85.36 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2679,14 +2679,14 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "U19")
+					(reference "U201")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "sthymuli_jlc:R")
 		(at 161.29 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -2696,7 +2696,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5bcd0455-7cff-4b31-b12d-5b5115bf414a")
-		(property "Reference" "R86"
+		(property "Reference" "R203"
 			(at 164.74 81.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2716,7 +2716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
 			(at 161.29 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2749,7 +2749,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25741"
+		(property "LCSC" "C25803"
 			(at 161.29 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2802,7 +2802,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "R86")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -2819,7 +2819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "604af062-18a7-4cff-8dea-66f7e066411a")
-		(property "Reference" "#PWR0300"
+		(property "Reference" "#PWR0206"
 			(at 170.18 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2879,14 +2879,14 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0300")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "sthymuli_jlc:R")
 		(at 193.04 105.41 0)
 		(unit 1)
 		(body_style 1)
@@ -2896,7 +2896,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7fc118d7-0b4a-4d11-a64b-373a462983d2")
-		(property "Reference" "R87"
+		(property "Reference" "R204"
 			(at 196.49 104.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2906,7 +2906,7 @@
 				)
 			)
 		)
-		(property "Value" "511k 1%"
+		(property "Value" "511k"
 			(at 198.69 106.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2916,7 +2916,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "sthymuli_jlc:R_0603_1608Metric"
 			(at 193.04 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2949,7 +2949,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C64042"
+		(property "LCSC" "C23194"
 			(at 193.04 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -3002,7 +3002,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "R87")
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -3019,7 +3019,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c78dbd0-c16f-4131-bb66-fc1adc7aa30c")
-		(property "Reference" "#PWR0252"
+		(property "Reference" "#PWR0201"
 			(at 104.14 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3079,7 +3079,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0252")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -3096,7 +3096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af2466f4-52e7-43dc-b43f-d815c4db1e36")
-		(property "Reference" "C135"
+		(property "Reference" "C202"
 			(at 174.18 105.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3116,7 +3116,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sthymuli_jlc:C0805"
+		(property "Footprint" "sthymuli_jlc:C_0805_2012Metric"
 			(at 170.18 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -3191,7 +3191,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "C135")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -3208,7 +3208,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b04b9a54-8727-4c6f-b72c-1f6a7267fbb3")
-		(property "Reference" "#PWR0299"
+		(property "Reference" "#PWR0205"
 			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3267,7 +3267,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0299")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -3284,7 +3284,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0af5451-9c6d-4ee8-8c1c-a12362f10b76")
-		(property "Reference" "C136"
+		(property "Reference" "C203"
 			(at 184.34 105.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3304,7 +3304,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sthymuli_jlc:C0805"
+		(property "Footprint" "sthymuli_jlc:C_0805_2012Metric"
 			(at 180.34 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -3390,7 +3390,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "C136")
+					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -3407,7 +3407,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e391594d-8b5e-46c0-aa1e-6bfd521cb050")
-		(property "Reference" "#PWR0298"
+		(property "Reference" "#PWR0204"
 			(at 152.4 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3467,7 +3467,7 @@
 		(instances
 			(project "Sthymuli-motherboard"
 				(path "/a56c3281-40b7-4048-95ca-500415dc80a4/a05f1843-89db-4486-b283-0f4f337e7fb4"
-					(reference "#PWR0298")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)

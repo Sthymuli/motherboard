@@ -35,7 +35,7 @@
 	(fp_line (start -7.65 -1.97) (end 7.65 -1.97) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 7.65 -1.97) (end 7.65 14.13) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 7.65 14.13) (end -7.65 14.13) (layer F.CrtYd) (width 0.05))
-	(model "C:/Users/Nathann/OneDrive/ClawdDrive/Electronique/Sthymuli-motherboard/lib/sthymuli_jlc.3dshapes/RJ45-TH_HCTL_HC-RJ45-5224-1-6.wrl"
+	(model "${KIPRJMOD}/lib/sthymuli_jlc.3dshapes/RJ45-TH_HCTL_HC-RJ45-5224-1-6.wrl"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

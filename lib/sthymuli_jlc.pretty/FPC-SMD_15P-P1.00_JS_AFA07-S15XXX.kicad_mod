@@ -53,7 +53,7 @@
 	(fp_line (start 10.65 2.51) (end 11.00 4.01) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 11.00 4.01) (end 11.00 5.01) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 11.00 5.01) (end -11.00 5.01) (layer F.CrtYd) (width 0.05))
-	(model "C:/Users/Nathann/OneDrive/ClawdDrive/Electronique/Sthymuli-motherboard/lib/sthymuli_jlc.3dshapes/FPC-SMD_AFA07-S15ECC-00.wrl"
+	(model "${KIPRJMOD}/lib/sthymuli_jlc.3dshapes/FPC-SMD_AFA07-S15ECC-00.wrl"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

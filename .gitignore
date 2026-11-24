@@ -1,0 +1,17 @@
+# KiCad lock files (created while a project/file is open)
+*.lck
+
+# KiCad automatic backups and local history (machine-local, large)
+*-backups/
+.history/
+
+# KiCad caches and autosaves
+fp-info-cache
+_autosave-*
+\#auto_saved_files\#
+*.bak
+*-bak
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db

@@ -265,92 +265,68 @@
   "erc": {
     "erc_exclusions": [
       [
-        "pin_to_pin|3581400|1981200|02ae252e-54dc-41ef-9602-39cd57f402bd|bb9de11a-7dfe-499f-b87f-cdf631248aa8|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4",
-        "its to set the address, as request by datasheet"
+        "footprint_filter|1003300|444500|726d4f75-328d-4c46-b8bc-7acf898d8d4e|00000000-0000-0000-0000-000000000000|||",
+        ""
       ],
       [
-        "pin_to_pin|774700|660400|ddd2f545-d8e8-4538-a028-fdc960f1a971|bb9de11a-7dfe-499f-b87f-cdf631248aa8|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4",
-        "its a backup, both chip should not be populated at the same time."
+        "footprint_filter|1104900|444500|275df7c4-f9d9-4e71-8076-319f0f29d789|00000000-0000-0000-0000-000000000000|||",
+        ""
       ],
       [
-        "power_pin_not_driven|1104900|2692400|bc601aae-79d5-4a6e-8e3c-d6fcf94119bf|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the schematic."
+        "footprint_filter|1206500|444500|968d0f74-b19f-4b03-b0ab-a6e39bf58d1e|00000000-0000-0000-0000-000000000000|||",
+        ""
       ],
       [
-        "power_pin_not_driven|1422400|1143000|c51f2c3d-3d57-41c6-92e9-ff498acbefdb|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "resistor in serie. its all good"
+        "footprint_filter|1308100|444500|e326dc0f-6191-4019-bdca-be87d23207fe|00000000-0000-0000-0000-000000000000|||",
+        ""
       ],
       [
-        "power_pin_not_driven|1422400|1168400|f9a27714-a322-4613-87c0-de7c6832eb3a|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "resistor in serie. its all good"
+        "footprint_filter|1447800|1066800|17a98a05-9d37-4ca5-9339-62434605f682|00000000-0000-0000-0000-000000000000|||",
+        ""
       ],
       [
-        "power_pin_not_driven|1422400|1193800|f06888d7-5be8-4ccd-9d94-0df3e92b9a2a|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "resistor in serie. its all good"
+        "four_way_junction|1130300|1993900|19e807a3-7286-4f6d-8dc0-7cf27a4a5919|42ea8bd5-937a-4f44-b055-5833d1ff24ab|/a56c3281-40b7-4048-95ca-500415dc80a4||",
+        ""
       ],
       [
-        "power_pin_not_driven|1422400|1219200|62700428-fd4c-45d8-8e3f-125c018c253e|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "resistor in serie. its all good"
+        "four_way_junction|1320800|1003300|3492ad54-5c68-4fbf-bfc8-65090817962a|f6bb176d-f6c6-428d-9588-a3dace403857|/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf||",
+        ""
       ],
       [
-        "power_pin_not_driven|1562100|2578100|745cc9f2-42a3-4445-b74f-0b3b8b6491b2|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the datasheet."
+        "four_way_junction|1320800|1003300|aa2f0a76-4186-4a54-bb1d-1cc356de1f01|e7971347-702e-465f-b656-d8587750bb0e|/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf||",
+        ""
       ],
       [
-        "power_pin_not_driven|1663700|990600|2585082c-adc4-44ec-97b2-7862c8d7a744|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the schematic."
+        "four_way_junction|1320800|1003300|e7971347-702e-465f-b656-d8587750bb0e|f6bb176d-f6c6-428d-9588-a3dace403857|/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf||",
+        ""
       ],
       [
-        "power_pin_not_driven|1689100|990600|7b4b75ad-e503-429d-9c45-cdd80ee3a300|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the schematic."
+        "four_way_junction|1320800|1003300|f6bb176d-f6c6-428d-9588-a3dace403857|e7971347-702e-465f-b656-d8587750bb0e|/a56c3281-40b7-4048-95ca-500415dc80a4/12d1b293-a116-4aca-9c37-7b28bd65edcf||",
+        ""
       ],
       [
-        "power_pin_not_driven|1930400|1193800|d90b1453-9986-4fdc-82eb-f8bd1ee0256e|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the schematic."
+        "four_way_junction|1511300|787400|83927dfc-4df8-4e6d-bd3b-ce2ce9525985|be550df3-6fb9-41f0-9244-cdf02e39fda0|/a56c3281-40b7-4048-95ca-500415dc80a4/b31bd8fe-79d3-4804-9706-451f0a00487d||",
+        ""
       ],
       [
-        "power_pin_not_driven|1930400|1219200|952e48a1-c4dc-45cd-9c9e-3f9791ac5a53|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the schematic."
+        "four_way_junction|5219700|698500|7d354f00-16bf-4df8-91c8-737f9dc19c8d|ca2c2b6a-e242-4587-b018-3ec7e49638a2|/a56c3281-40b7-4048-95ca-500415dc80a4||",
+        ""
       ],
       [
-        "power_pin_not_driven|241300|927100|6fc17006-8509-45d9-8040-ae049db74470|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "serie resistor, its all good"
+        "four_way_junction|5219700|698500|aed5cd5d-b07a-4efd-88a5-5b8f189a44a2|b3a79f7f-dbe1-411a-a7f1-82fcaca4fa09|/a56c3281-40b7-4048-95ca-500415dc80a4||",
+        ""
       ],
       [
-        "power_pin_not_driven|2781300|1879600|1e6b9c59-6a9f-4662-a643-c168a58fc0da|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the datasheet."
+        "four_way_junction|990600|1993900|480ad254-3aa7-4a68-bdb1-1d16089d042b|ed29e7cb-725c-4931-ba93-36c728810767|/a56c3281-40b7-4048-95ca-500415dc80a4||",
+        ""
       ],
       [
-        "power_pin_not_driven|342900|1765300|40a1da6b-054c-4226-b2e8-a04c16332ca9|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "kicad see battery cell as not power output. no isse here"
+        "four_way_junction|990600|1993900|8368b8dc-beda-4090-ab3b-f0ef1527b117|480ad254-3aa7-4a68-bdb1-1d16089d042b|/a56c3281-40b7-4048-95ca-500415dc80a4||",
+        ""
       ],
       [
-        "power_pin_not_driven|4343400|1473200|3acb386b-2b1a-415b-b51d-7ad71251dd52|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "its a tie for the groundplane, all good"
-      ],
-      [
-        "power_pin_not_driven|4483100|1905000|7492700c-5906-4c44-aba1-fcba5c9ec423|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "this is intended, to drop the voltage for the first led to make it 3v3 compatible"
-      ],
-      [
-        "power_pin_not_driven|457200|482600|ae0a3e3b-337e-426d-b3a5-737db8d68806|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "VBUS from USB is a power pin..."
-      ],
-      [
-        "power_pin_not_driven|4800600|1346200|66caa146-e412-4da2-8610-ce5e0b69a1a5|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "inductor in serie. as required by datasheet"
-      ],
-      [
-        "power_pin_not_driven|520700|3454400|e04955c3-992a-46e6-bf12-de48fda13591|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "as requested by the datasheet."
-      ],
-      [
-        "power_pin_not_driven|622300|660400|1116ef9b-5dbc-463a-9a68-3fed008b0261|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "serie resistor. all good"
-      ],
-      [
-        "power_pin_not_driven|673100|444500|4ff1fe1a-1ad3-4a26-b372-be705dd41255|00000000-0000-0000-0000-000000000000|/a56c3281-40b7-4048-95ca-500415dc80a4|/a56c3281-40b7-4048-95ca-500415dc80a4|",
-        "there is just the debug resistor in serie but its still good"
+        "multiple_net_names|1206500|914400|4f711071-d80f-4876-83d4-1f0831377d32|29084327-be49-40c8-95cf-5bdc6dc182a1|/a56c3281-40b7-4048-95ca-500415dc80a4/f0fcfb18-6d8f-4647-af8b-4423b5903c97|/a56c3281-40b7-4048-95ca-500415dc80a4/f0fcfb18-6d8f-4647-af8b-4423b5903c97|/a56c3281-40b7-4048-95ca-500415dc80a4/f0fcfb18-6d8f-4647-af8b-4423b5903c97",
+        ""
       ]
     ],
     "meta": {
@@ -538,9 +514,9 @@
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "field_name_whitespace": "warning",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
@@ -559,15 +535,15 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "simulation_model_issue": "warning",
+      "single_global_label": "error",
       "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
@@ -631,7 +607,7 @@
   "schematic": {
     "annotate_start_num": 0,
     "annotation": {
-      "method": 0,
+      "method": 1,
       "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
@@ -856,7 +832,7 @@
         "uuid": "a56c3281-40b7-4048-95ca-500415dc80a4"
       }
     ],
-    "used_designators": "#PWR319,C10,R83-84,R107,RJ1,U5",
+    "used_designators": "#FLG101-109,#PWR101-156,#PWR201-208,#PWR301-311,#PWR319,#PWR401,#PWR501-516,C10,C101-133,C201-203,C301-307,C401-402,C501-511,D101-107,D301-302,F301,F401-404,FPC101-104,J101,JP101-108,L201,L301,L501,LS101,M401-402,Q101,Q301-302,R83-84,R101-130,R201-205,R301-309,R401-404,R501-507,RJ1,RJ101,SW101-102,TH301,TP101-102,U5,U101-106,U201,U301,U401,U501-502",
     "variants": [
       {
         "name": "production"
