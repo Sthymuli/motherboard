@@ -206,7 +206,23 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.3,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.4,
+        1.85
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -589,6 +605,63 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 2
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_5A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.85,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 2
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_3A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.9,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 2
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_2A",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.55,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 2
       }
     ],
     "meta": {
@@ -596,7 +669,100 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR_5A",
+        "pattern": "/BMS/VBAT"
+      },
+      {
+        "netclass": "PWR_5A",
+        "pattern": "+BATT"
+      },
+      {
+        "netclass": "PWR_5A",
+        "pattern": "B-"
+      },
+      {
+        "netclass": "PWR_5A",
+        "pattern": "Net-(M401-D)"
+      },
+      {
+        "netclass": "PWR_5A",
+        "pattern": "/5VBoost/BST_SW"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "Net-(JP101-A)"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/ChargerPD/VBUS"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/ChargerPD/VBUS_F"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/ChargerPD/CHG_VCC"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/ChargerPD/CHG_SW"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/ChargerPD/CHG_CSP"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/ChargerPD/VBAT"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "Net-(U502-IN)"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "/5VBoost/5V"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "Net-(U201-L1)"
+      },
+      {
+        "netclass": "PWR_3A",
+        "pattern": "Net-(U201-L2)"
+      },
+      {
+        "netclass": "PWR_2A",
+        "pattern": "BAT+EAST"
+      },
+      {
+        "netclass": "PWR_2A",
+        "pattern": "BAT+NORTH"
+      },
+      {
+        "netclass": "PWR_2A",
+        "pattern": "BAT+SOUTH"
+      },
+      {
+        "netclass": "PWR_2A",
+        "pattern": "BAT+WEST"
+      },
+      {
+        "netclass": "PWR_2A",
+        "pattern": "/3V3BuckBoost/3V3"
+      },
+      {
+        "netclass": "PWR_2A",
+        "pattern": "+3V3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

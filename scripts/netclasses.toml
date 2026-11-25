@@ -1,0 +1,39 @@
+# Net classes for the motherboard, sized from current and voltage.
+# After editing, run:  python3 scripts/netclass_rules.py   (with KiCad closed)
+# Nets not listed stay in Default (signals; 0.2 mm carries about 1 A with these settings).
+# GND is left in Default on purpose: it should be a plane / pour, with vias at each pad.
+
+[design]
+project = "Sthymuli-motherboard"
+temp_rise_c = 20     # allowed track temperature rise at the design current
+min_track_mm = 0.15  # narrowest neck-down the exceptions may ask for
+round_mm = 0.05      # widths are rounded up (class) or down (neck-down) to this step
+
+[[class]]
+name = "PWR_5A"
+current_a = 5
+voltage_v = 4.2
+# Battery pack to the converters. Boost: 5 V x 2.06 A (SY6280 limit) / (3.0 V x 0.9) = 3.8 A,
+# plus TPS63802 input up to ~1.2 A typical. Switch node carries the boost inductor current.
+nets = ["/BMS/VBAT", "+BATT", "B-", "Net-(M401-D)", "/5VBoost/BST_SW"]
+
+[[class]]
+name = "PWR_3A"
+current_a = 3
+voltage_v = 9
+# USB-C input: CH224K asks for 9 V (R103 = 6.8k), F301 holds 3 A; at a 5 V source the
+# charger draws ~2.4 A. Charger output: CN3801 0.12 V / R307 47 mR = 2.55 A.
+# 5 V rail: SY6280 limit 6800 / 3.3k = 2.06 A. TPS63802 inductor nodes: up to ~3 A.
+nets = [
+  "Net-(JP101-A)", "/ChargerPD/VBUS", "/ChargerPD/VBUS_F", "/ChargerPD/CHG_VCC",
+  "/ChargerPD/CHG_SW", "/ChargerPD/CHG_CSP", "/ChargerPD/VBAT",
+  "Net-(U502-IN)", "/5VBoost/5V", "+5V",
+  "Net-(U201-L1)", "Net-(U201-L2)",
+]
+
+[[class]]
+name = "PWR_2A"
+current_a = 2
+voltage_v = 4.2
+# One cell each, through a 2 A hold PTC (F401..F404); 3V3 sized to the TPS63802 2 A rating.
+nets = ["BAT+EAST", "BAT+NORTH", "BAT+SOUTH", "BAT+WEST", "/3V3BuckBoost/3V3", "+3V3"]
