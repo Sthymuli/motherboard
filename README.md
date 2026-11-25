@@ -20,6 +20,8 @@ Regenerated automatically by the [export workflow](.github/workflows/export.yml)
 
 To run the same export locally: `scripts/export.sh` (see the comment at the top of the script for the Flatpak KiCad variant).
 
+The cardinal board can be found [here](https://github.com/Sthymuli/cardinalboard).
+
 # Feature
 The device contains the following sensors 
 
